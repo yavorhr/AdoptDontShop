@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Init;
+package softuni.adoptdontshop.init;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
