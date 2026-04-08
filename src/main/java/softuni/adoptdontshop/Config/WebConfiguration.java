@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Config;
+package softuni.adoptdontshop.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

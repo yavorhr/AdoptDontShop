@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Config;
+package softuni.adoptdontshop.config;
 
 import com.cloudinary.Cloudinary;
 import org.modelmapper.ModelMapper;

@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Config;
+package softuni.adoptdontshop.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

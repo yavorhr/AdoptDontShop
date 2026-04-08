@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Config;
+package softuni.adoptdontshop.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

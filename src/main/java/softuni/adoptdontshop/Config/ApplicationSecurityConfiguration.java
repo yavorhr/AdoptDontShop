@@ -1,4 +1,4 @@
-package softuni.adoptdontshop.Config;
+package softuni.adoptdontshop.config;
 
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +20,6 @@ public class ApplicationSecurityConfiguration extends WebSecurityConfigurerAdapt
         this.userDetailsService = userDetailsService;
         this.passwordEncoder = passwordEncoder;
     }
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
