@@ -13,7 +13,6 @@ import softuni.adoptdontshop.Repository.PictureRepository;
 import softuni.adoptdontshop.Repository.PictureUserRepositorty;
 import softuni.adoptdontshop.Repository.UserRepository;
 import softuni.adoptdontshop.Service.CloudinaryService;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
