@@ -1,7 +1,7 @@
 package softuni.adoptdontshop.Model.Model.BindingModel;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 public class CommentBindingModel {
 

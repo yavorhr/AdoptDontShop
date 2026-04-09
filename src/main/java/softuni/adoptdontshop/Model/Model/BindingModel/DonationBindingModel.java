@@ -1,9 +1,8 @@
 package softuni.adoptdontshop.Model.Model.BindingModel;
 
 import org.hibernate.validator.constraints.Length;
-
-import javax.persistence.Lob;
-import javax.validation.constraints.*;
+import jakarta.persistence.Lob;
+import jakarta.validation.constraints.*;
 import java.math.BigDecimal;
 
 public class DonationBindingModel {

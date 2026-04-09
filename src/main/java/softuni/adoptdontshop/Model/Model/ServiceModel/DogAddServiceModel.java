@@ -5,7 +5,7 @@ import softuni.adoptdontshop.Model.Enum.GenderEnum;
 import softuni.adoptdontshop.Model.Enum.MedicalRecordEnum;
 import softuni.adoptdontshop.Model.Enum.SizeEnum;
 
-import javax.validation.constraints.*;
+import jakarta.validation.constraints.*;
 import java.util.Set;
 
 public class DogAddServiceModel {

@@ -2,7 +2,7 @@ package softuni.adoptdontshop.Model.Entity;
 
 import softuni.adoptdontshop.Model.Enum.UserRoleEnum;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "roles")
