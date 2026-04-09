@@ -12,7 +12,7 @@ import softuni.adoptdontshop.Model.Model.BindingModel.UserRegistrationBindingMod
 import softuni.adoptdontshop.Model.Model.ServiceModel.UserRegistrationServiceModel;
 import softuni.adoptdontshop.Service.UserService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 @Controller
 public class UserRegistrationController {
