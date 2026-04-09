@@ -12,7 +12,9 @@ import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 
+import java.util.Locale;
 import java.util.Map;
+import java.util.TimeZone;
 
 @Service
 public class ApplicationBeanConfiguration {
@@ -21,7 +23,7 @@ public class ApplicationBeanConfiguration {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new Pbkdf2PasswordEncoder();
+        return Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8();
     }
 
     @Bean
@@ -29,17 +31,13 @@ public class ApplicationBeanConfiguration {
         return new ModelMapper();
     }
 
-    //
     @Bean
     public LocaleResolver localeResolver() {
-        CookieLocaleResolver cookieLocaleResolver = new CookieLocaleResolver();
-        cookieLocaleResolver.setCookieName("lang");
-        return cookieLocaleResolver;
+        CookieLocaleResolver localeResolver = new CookieLocaleResolver();
+        localeResolver.setDefaultLocale(Locale.ENGLISH);
+        localeResolver.setDefaultTimeZone(TimeZone.getTimeZone("UTC"));
+        return localeResolver;
     }
-
-    //С този interceptor се прихваща one parameter според JQUERY в browser-a, взима стойността му (вижда
-    // например че е lang=DE, и нотифицира LocaleResolver-a, че нещо е сменено, и LocaleResolver-a сет-ва
-    //languаge cookie на browser-a за избора на език.
 
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
@@ -48,7 +46,6 @@ public class ApplicationBeanConfiguration {
         return lci;
     }
 
-    //Казваме на IntelliJ къде се намират нашите файлове с преводите (bundles), в случая в i118n.
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
