@@ -1,6 +1,6 @@
 package softuni.adoptdontshop.Model.Entity;
 import softuni.adoptdontshop.Model.Enum.MedicalRecordEnum;
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "medical_records")

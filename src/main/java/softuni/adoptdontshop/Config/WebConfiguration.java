@@ -9,7 +9,6 @@ import softuni.adoptdontshop.Web.interceptor.StatsInterceptor;
 @Configuration
 public class WebConfiguration implements WebMvcConfigurer {
 
-    //Регистрираме Interceptor-ите, които използваме в Spring
     private final StatsInterceptor statsInterceptor;
     private final LocaleChangeInterceptor changeInterceptor;
 

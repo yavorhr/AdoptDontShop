@@ -1,8 +1,7 @@
 package softuni.adoptdontshop.Model.Entity;
 
 import softuni.adoptdontshop.Model.Enum.SizeEnum;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

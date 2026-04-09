@@ -5,8 +5,8 @@ import softuni.adoptdontshop.Model.Enum.GenderEnum;
 import softuni.adoptdontshop.Model.Enum.MedicalRecordEnum;
 import softuni.adoptdontshop.Model.Enum.SizeEnum;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
