@@ -3,9 +3,8 @@ package softuni.adoptdontshop.Web.interceptor;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import softuni.adoptdontshop.Service.StatsService;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 @Component
 public class StatsInterceptor implements HandlerInterceptor {

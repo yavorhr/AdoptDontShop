@@ -19,8 +19,7 @@ import softuni.adoptdontshop.Model.Model.ServiceModel.DogUpdateServiceModel;
 import softuni.adoptdontshop.Model.Model.ViewModel.DogDetailsViewModel;
 import softuni.adoptdontshop.Service.*;
 import softuni.adoptdontshop.Web.exception.ResourceNotFoundException;
-
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.io.IOException;
 import java.security.Principal;
 

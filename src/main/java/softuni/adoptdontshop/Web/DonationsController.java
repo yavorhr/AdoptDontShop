@@ -10,7 +10,7 @@ import softuni.adoptdontshop.Model.Model.BindingModel.DonationBindingModel;
 import softuni.adoptdontshop.Model.Model.ServiceModel.DonationServiceModel;
 import softuni.adoptdontshop.Service.DonationService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 @Controller
 public class DonationsController {

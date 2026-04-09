@@ -13,7 +13,7 @@ import softuni.adoptdontshop.Model.Model.ViewModel.CommentViewModel;
 import softuni.adoptdontshop.Model.Validator.APIError;
 import softuni.adoptdontshop.Service.CommentService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.net.URI;
 import java.security.Principal;
 import java.util.List;

@@ -2,8 +2,8 @@ package softuni.adoptdontshop.Model.Validator;
 
 import softuni.adoptdontshop.Service.UserService;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class UniqueEmailValidator implements ConstraintValidator<UniqueEmail,String> {
 
