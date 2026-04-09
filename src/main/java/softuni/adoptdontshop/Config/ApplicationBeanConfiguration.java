@@ -57,14 +57,4 @@ public class ApplicationBeanConfiguration {
     public ApplicationBeanConfiguration(CloudinaryConfig config) {
         this.config = config;
     }
-
-    @Bean
-    public Cloudinary cloudinary() {
-        return new Cloudinary(
-                Map.of("cloud_name", config.getCloudName(),
-                        "api_key", config.getApiKey(),
-                        "api_secret", config.getApiSecret()
-                )
-        );
-    }
 }
